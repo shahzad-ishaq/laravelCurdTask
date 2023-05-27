@@ -6,3 +6,48 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
+ For Run this Code please Used These Command
+
+ Your branch is up to date with 'origin/main'.
+
+First 
+
+git clone https://github.com/shahzad-ishaq/laravelCurdTask.git
+
+Second.
+
+composer install
+
+Third 
+
+php artisan generate key
+
+Fourth
+
+composer require laravel/sanctum
+and 
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+five 
+php artisan migrate
+
+
+add Sanctum's middleware to your api middleware group within your application's
+Just like 
+
+"'api' => [
+    \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
+    \Illuminate\Routing\Middleware\ThrottleRequests::class.':api',
+    \Illuminate\Routing\Middleware\SubstituteBindings::class,
+],"
+
+
+ npm install
+
+ npm run build
+
+ php artisan optimize
+
+ php artisan serve
+ 
+ you can access the in browser like "http://127.0.0.1:8000/"
